@@ -12,7 +12,13 @@
 
     public function signIn()
     {
-
+      print_r($_POST);
+      if (CB::_assert($_POST, array("login" => "[a-zA-Z]", "password")))
+      {
+        print_r("post success");
+      }
+      else
+        print_r("<br>error from post");
     }
   }
 

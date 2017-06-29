@@ -12,24 +12,19 @@
      */
     public static function _assert(array $input, array $keys): int
     {
-      while ($value = current($keys))
+      $i = 0;
+      $ret = 1;
+        print_r($keys);
+      foreach ($input as $key => $value)
       {
-        $key = key($keys);
-        if (!(empty($key)))
-          if (array_key_exists($key, $input) && !(empty($input[$key])))
-          {
-            preg_match("/".$value."/", $input[$key], $match);
-            if (empty($match[0]))
-              return (0);
-          }
-          else
-            return (0);
-        else
-          if (!(array_key_exists($value, $input)) || empty($input[$value]))
-            return (0);
-        next($keys);
+        print_r($key);
+        if (isset($keys[$i]) && $key != $keys[$i])
+          $ret = 0;
+        else if (array_key_exists($key, $keys))
+          print_r("need check regex");
+        $i++;
       }
-      return (1);
+      return ($ret);
     }
   }
 
