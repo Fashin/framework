@@ -25,6 +25,11 @@
     {
       return ($this->function);
     }
+
+    public static function redirect($path) : string
+    {
+      return ("/framework/" . $path);
+    }
   }
 
 ?>

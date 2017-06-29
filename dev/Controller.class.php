@@ -41,6 +41,12 @@ class Controller
     require_once(VIEW . "default.php");
   }
 
+  public function formulaire($action)
+  {
+    require_once(DEV."Formulaire.class.php");
+    return (new Formulaire($action));
+  }
+
 }
 
 ?>

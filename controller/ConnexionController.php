@@ -6,7 +6,13 @@
     {
       $this->set("title", "you need connexion");
       $this->set("link", "Vers la page d'accueil");
+      $this->set("formulaire", $this->formulaire(Routeur::redirect("connexion/signIn"))->login(array("Pseudo : " => "login", "Password : " => "password"), array("text", "password"), "Log In"));
       $this->rend("connexion");
+    }
+
+    public function signIn()
+    {
+
     }
   }
 

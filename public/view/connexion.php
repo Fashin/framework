@@ -1,2 +1,3 @@
 <h1><?= $title ?></h1>
-<a href="/framework/index/view"><?= $link ?></a>
+<a href="<?= Routeur::redirect("index/view") ?>"><?= $link ?></a>
+<?= $formulaire; ?>
