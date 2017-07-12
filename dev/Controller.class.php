@@ -47,6 +47,11 @@ class Controller
     return (new Formulaire($action));
   }
 
+  public function call_model($model_name)
+  {
+    
+  }
+
 }
 
 ?>
