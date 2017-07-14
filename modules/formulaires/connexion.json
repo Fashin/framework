@@ -1,0 +1,22 @@
+{
+	"init": {
+		"method": "POST",
+		"action": "connexion/signIn"
+	},
+	"0": {
+		"type": "text",
+		"name": "login",
+		"class": "connexion_form_login"
+	},
+	"1": {
+		"type": "password",
+		"name": "password",
+		"class": "connexion_form_password"
+	},
+	"2": {
+		"type": "submit",
+		 "name": "log_in",
+		 "value": "Log In",
+		 "class": "connexion_form_submit"
+	}
+}

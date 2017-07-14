@@ -1,10 +1,10 @@
 <?php
 
-class Model
+class Model extends Init
 {
   public function __construct($db_name)
   {
-    print_r(Init::get_db_information($db_name));
+    //print_r($this->db_connect[$db_name]);
   }
 }
 

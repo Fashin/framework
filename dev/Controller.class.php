@@ -41,15 +41,15 @@ class Controller
     require_once(VIEW . "default.php");
   }
 
-  public function formulaire($action)
+  public function formulaire()
   {
     require_once(DEV."Formulaire.class.php");
-    return (new Formulaire($action));
+    return (new Formulaire());
   }
 
   public function call_model($model_name)
   {
-    
+
   }
 
 }
