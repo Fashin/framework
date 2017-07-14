@@ -1,7 +1,5 @@
 ## Voici mon propre framework @Nolht
 
-***
-
 #### Syntaxe pour les class :
 
 Pour formater le css toutes les class doivent êtres :
