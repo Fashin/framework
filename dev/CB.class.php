@@ -10,21 +10,21 @@
      * @return int          Return 0 if a key don't exist or is empty or regex error
      * @author cbeauvoi
      */
-    public static function _assert(array $input, array $keys): int
+    public static function _assert(array $input, array $keys): bool
     {
-      $i = 0;
-      $ret = 1;
-        print_r($keys);
-      foreach ($input as $key => $value)
+      $need_confirmation = array_keys($input);
+      $ret = FALSE;
+
+      for ($i = 0; $i < count($need_confirmation); $i++)
       {
-        print_r($key);
-        if (isset($keys[$i]) && $key != $keys[$i])
-          $ret = 0;
-        else if (array_key_exists($key, $keys))
-          print_r("need check regex");
-        $i++;
+        $ret = FALSE;
+        for ($j = 0; $j < count($keys); $j++)
+          if ($keys[$j] == $need_confirmation[$i] && !(empty($input[$need_confirmation[$i]])))
+            $ret = TRUE;
+        if (!($ret))
+          return ($ret);
       }
-      return ($ret);
+      return (TRUE);
     }
   }
 

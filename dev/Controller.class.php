@@ -49,7 +49,7 @@ class Controller
 
   public function call_model($model_name)
   {
-
+    
   }
 
 }
