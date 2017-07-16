@@ -14,7 +14,10 @@
     {
       if (CB::_assert($_POST, array("login", "password", "log_in")))
       {
-        $model = $this->call_db();
+        $str = CB::_var_dump(array("bonjour" =>"Hello World", 0 => 1, array("bonjour"=>"test", 1 => 1)));
+        $this->set("debug", $str);
+        $this->rend('connexion');
+        //$this->call_model('insert')->db_insert('forum', array('title'), array('my title'));
       }
     }
   }

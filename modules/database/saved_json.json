@@ -1,0 +1,14 @@
+{
+  "users": {
+    "login": "varchar(255)",
+    "password": "varchar(255)",
+    "avatar": "varchar(255)",
+    "sex": "varchar(1)",
+    "created_at": "date",
+    "id": "int(11) auto_increment primary key"
+  },
+  "forum": {
+    "id": "int(11) auto_increment primary key",
+    "title": "varchar(255) not null"
+  }
+}

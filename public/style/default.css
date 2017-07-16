@@ -1,0 +1,3 @@
+.table_var_dump { border-collapse: collapse; width: 100%; }
+.td_var_dump { display: block; height: 15px; width: 60%; }
+.td_var_dump content { color: red; }

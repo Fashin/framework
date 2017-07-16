@@ -2,7 +2,6 @@
 
 class Controller
 {
-
   public function call_controller($name)
   {
     $name = ucfirst($name) . "Controller";
@@ -49,9 +48,10 @@ class Controller
 
   public function call_model($model_name)
   {
-    
+    $name = ucfirst($model_name);
+    require_once(ROOT. "models/" . $name . ".class.php");
+    return (new $name(DB_NAME));
   }
-
 }
 
 ?>

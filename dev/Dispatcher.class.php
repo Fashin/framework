@@ -12,7 +12,6 @@
     public function __construct()
     {
       $routeur = new Routeur();
-      $model = new Model('localhost');
       $controller = new Controller();
       $cont = $controller->call_controller($routeur->get_controller());
       $controller->call_function($routeur->get_controller(), $cont, $routeur->get_function());

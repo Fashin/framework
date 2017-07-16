@@ -8,7 +8,7 @@
    class Init
    {
      public $db_connect = array(
-       'localhost' => array('host' => 'localhost', 'db_name' => 'framework', 'user' => 'root', 'psswd' => 'Beauvois41')
+       'localhost' => array('host' => 'localhost', 'db_name' => 'framework', 'user' => 'root', 'psswd' => 'root')
      );
 
      public static function get_db_information($db_host) : array
