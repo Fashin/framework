@@ -1,2 +1,12 @@
-<h1><?= $title ?></h1>
-<a href="<?= Routeur::redirect("connexion/view") ?>"><?= $link ?></a>
+<?= $logo ?>
+<?= $menu  ?>
+<?php
+  if (isset($portfolio))
+  {
+    ?>
+      <div id="portfolio">
+        <?= $portfolio ?>
+      </div>
+    <?php
+  }
+?>

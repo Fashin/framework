@@ -7,7 +7,10 @@
   define("DB", ROOT."modules/database/");
   define("LOG", ROOT."log/");
   define("DB_NAME", "localhost");
-  define("STYLE", '/public/style/');
+  define("STYLE", 'public/style/');
+  define("IMG", "/public/img/");
+  define("MOD", ROOT."modules/");
+  define("JS", "public/script/");
   require_once('config/init.php');
 
   $dispatcher = new Dispatcher();
